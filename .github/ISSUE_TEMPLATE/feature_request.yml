@@ -1,0 +1,49 @@
+name: 🚀 Permintaan Fitur
+description: Usulkan ide atau fitur baru untuk proyek ini
+title: "[FEAT] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Punya ide keren? Kami senang mendengarnya! Isi form berikut untuk mengusulkan fitur baru.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 🔍 Masalah yang Ingin Diselesaikan
+      description: Deskripsikan masalah atau kebutuhan yang melatarbelakangi usulan ini.
+      placeholder: "Saya sering kesulitan ketika... / Akan lebih baik jika..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: 💡 Solusi yang Diusulkan
+      description: Deskripsikan fitur atau perubahan yang Anda inginkan.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternatif yang Sudah Dipertimbangkan
+      description: Apakah ada pendekatan lain yang sudah Anda pertimbangkan?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: ⚡ Prioritas
+      options:
+        - Rendah (nice-to-have)
+        - Sedang (berguna untuk banyak pengguna)
+        - Tinggi (penting untuk fungsi utama)
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 📌 Konteks / Referensi Tambahan
+      description: Tambahkan screenshot, link referensi, atau informasi lain yang relevan.

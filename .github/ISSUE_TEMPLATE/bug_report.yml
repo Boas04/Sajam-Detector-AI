@@ -1,0 +1,74 @@
+name: 🐛 Laporan Bug
+description: Laporkan bug atau perilaku yang tidak diharapkan
+title: "[BUG] "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Terima kasih telah melaporkan bug! Mohon isi form berikut selengkap mungkin.
+
+  - type: textarea
+    id: description
+    attributes:
+      label: 📝 Deskripsi Bug
+      description: Jelaskan bug yang ditemukan secara singkat dan jelas.
+      placeholder: "Saat mengklik tombol X, terjadi error Y..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: 🔁 Langkah Reproduksi
+      description: Langkah-langkah untuk mereproduksi bug ini.
+      placeholder: |
+        1. Jalankan `streamlit run Main.py`
+        2. Klik '...'
+        3. Lihat error
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Perilaku yang Diharapkan
+      description: Apa yang seharusnya terjadi?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ Perilaku yang Terjadi
+      description: Apa yang sebenarnya terjadi?
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📸 Screenshot / Log Error
+      description: Lampirkan screenshot atau pesan error jika ada.
+
+  - type: input
+    id: python_version
+    attributes:
+      label: 🐍 Versi Python
+      placeholder: "mis. 3.10.6"
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: 💻 Sistem Operasi
+      placeholder: "mis. Windows 11, Ubuntu 22.04"
+    validations:
+      required: true
+
+  - type: textarea
+    id: extra
+    attributes:
+      label: 📌 Informasi Tambahan
+      description: Informasi lain yang mungkin relevan.
